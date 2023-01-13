@@ -14,7 +14,7 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src\\test\\java\\com\\adacin\\feature", glue = "com.adactin.stepdefinition")
+@CucumberOptions(features = "src\\test\\java\\com\\adactin\\feature", glue = "com.adactin.stepdefinition")
 
 public class Runner_Class {
 
@@ -26,7 +26,7 @@ public class Runner_Class {
 		String browser = File_Reader_Manager.getInstance().getInstanceCR().getBrowser();
 		String url = File_Reader_Manager.getInstance().getInstanceCR().getUrl();
 
-		driver = Base_Class.launchbrowser(browser);
+		driver = Base_Class.launchbrowser("chrome");
 		driver = Base_Class.getUrl(url);
 
 	}

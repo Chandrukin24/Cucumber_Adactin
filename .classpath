@@ -24,5 +24,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
+	<classpathentry kind="lib" path="C:/Users/chank/.m2/repository/junit/junit/junit-jupiter-api-5.9.0.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
