@@ -14,14 +14,15 @@ public class Step_Definition extends Base_Class {
 	
 	public static WebDriver driver = Runner_Class.driver;
 	
+	
 	Page_Object_Manager pom = new Page_Object_Manager(driver);
 	
-
+	
 	@Given("^user Launch The Application$")
 	public void user_Launch_The_Application() throws Throwable {
 		getUrl("https://adactinhotelapp.com/index.php");
 	}
-
+	
 	@When("^user Enter The Username In Username Field$")
 	public void user_Enter_The_Username_In_Username_Field() throws Throwable {
 		InputValue(pom.getInstanceLP().getUsername(), "Chandru12345");
